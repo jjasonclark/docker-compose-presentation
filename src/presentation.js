@@ -17,8 +17,8 @@ import {
 
 // Import theme
 import createTheme from "spectacle/lib/themes/default";
-import basicDockerCompose from "./basic_docker-compose.yml";
-import mysqlDockerCompose from "./mysql_docker-compose.yml";
+const basicDockerCompose = require("raw-loader!./basic_docker-compose.yml"); // eslint-disable-line
+const mysqlDockerCompose = require("raw-loader!./mysql_docker-compose.yml"); // eslint-disable-line
 
 // Require CSS
 require("normalize.css");
